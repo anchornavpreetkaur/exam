@@ -4,7 +4,14 @@
 
 - You may use **any offline material** (your own code, notes, course material).
 - **No AI tools** (ChatGPT, Copilot, etc.) and **no internet search** (Google, Stack Overflow, etc.).
-- **Make a git commit after each question** with a meaningful commit message (e.g., `Q1: Implement getWorkoutById`).
+- **Make a git commit after each question** with a meaningful commit message (e.g., `Q1: Implement getWorkoutById`).¨
+
+---
+
+**Exam Recording Instructions**
+
+- *Recording Requirement*: The coding session must be recorded on your local machine. Both the Driver and the Navigator record the entire session.
+- *Upload Recording*: at the end of the exam
 
 ---
 
