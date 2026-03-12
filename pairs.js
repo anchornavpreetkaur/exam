@@ -9,7 +9,7 @@ const names = [
     "Bipassa",
     "Ghanshyam",
     "Reejan",
-    "Sanjay",
+    "Sanjaya",
 ];
 
 function shuffleArray(array) {

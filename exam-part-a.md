@@ -11,7 +11,13 @@
 **Exam Recording Instructions**
 
 - *Recording Requirement*: The coding session must be recorded on your local machine. Both the Driver and the Navigator record the entire session.
-- *Upload Recording*: at the end of the exam
+- *Upload Recording*: After the session, Zoom will save the recording to your computer. Please upload that file to this SharePoint link:
+  - Pair 1: [Reejan & Ghanshyam](https://metropoliafi-my.sharepoint.com/:f:/g/personal/samiben_metropolia_fi/IgAiiedfWkz5QrUCeqky_QL3AS_-2Yq-n0-bYjfQhvpVXA4?e=Eg0iAm) 
+  - Pair 2: [Prathana & Sanjaya](https://metropoliafi-my.sharepoint.com/:f:/g/personal/samiben_metropolia_fi/IgBxTMdK9my0R5XUVqNTszqzASqmRclzF53lSZ2X39aBQl0?e=DjFL9H)
+  - Pair 3: [Navpreet & Priya](https://metropoliafi-my.sharepoint.com/:f:/g/personal/samiben_metropolia_fi/IgDfWYgn6gbKT633dUQQmparATDtrWWrFGEu_-I6JAAiQNg?e=opZaAl)
+  - Pair 4: [Rohail & Bipassa](https://metropoliafi-my.sharepoint.com/:f:/g/personal/samiben_metropolia_fi/IgBWcglaRXw8RJEIF-220JMxAcOnST06kUlAUJ2aRasStrA?e=VokS6H)
+  - Pair 5: [Afrin & Thushan](https://metropoliafi-my.sharepoint.com/:f:/g/personal/samiben_metropolia_fi/IgDmqt3sxcT_ToSQRK3vUj9zAcLHvbykj_dk4cWb40bqujE?e=NdIkIb)
+
 
 ---
 
@@ -37,7 +43,7 @@ You are being graded on your performance **within your assigned role**, not on t
 
 ## Overview
 
-You are given a [*starter code** for a Workout listing application.](https://github.com/FullStack-DP/exam) Some parts are already implemented and working:
+You are given a [starter code for a Workout listing application.](https://github.com/FullStack-DP/exam) Some parts are already implemented and working:
 
 **Already working:**
 - Backend: `getAllWorkouts` (GET /api/workouts) and `createWorkout` (POST /api/workouts)
