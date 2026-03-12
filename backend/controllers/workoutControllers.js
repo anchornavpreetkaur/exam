@@ -17,7 +17,11 @@ const createWorkout = async (req, res) => {
 // - Return the workout as JSON
 // - Return 404 with { error: "Workout not found" } if not found
 const getWorkoutById = async (req, res) => {
-  res.send("getWorkoutById - not yet implemented");
+  const workout = await Workout.findById(req.params.workoutId);
+  if (!workout) {
+    return res.status(404).json({ error: "Workout not found" });
+  }
+  res.json(workout);
 };
 
 // TODO (Q3): Implement updateWorkout
@@ -26,7 +30,15 @@ const getWorkoutById = async (req, res) => {
 // - Return the updated workout as JSON
 // - Return 404 with { error: "Workout not found" } if not found
 const updateWorkout = async (req, res) => {
-  res.send("updateWorkout - not yet implemented");
+  const workout = await Workout.findByIdAndUpdate(
+    req.params.workoutId,
+    req.body,
+    { new: true, runValidators: true }
+  );
+  if (!workout) {
+    return res.status(404).json({ error: "Workout not found" });
+  }
+  res.json(workout);  
 };
 
 // TODO (Q2): Implement deleteWorkout
@@ -34,7 +46,11 @@ const updateWorkout = async (req, res) => {
 // - Return the deleted workout as JSON
 // - Return 404 with { error: "Workout not found" } if not found
 const deleteWorkout = async (req, res) => {
-  res.send("deleteWorkout - not yet implemented");
+  const workout = await Workout.findByIdAndDelete(req.params.workoutId);
+  if (!workout) {
+    return res.status(404).json({ error: "Workout not found" });
+  }
+  res.json(workout);
 };
 
 module.exports = {

@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const requireAuth = require("../middleware/requireAuth");
 const {
   getAllWorkouts,
   createWorkout,
@@ -12,15 +13,15 @@ const {
 router.get("/", getAllWorkouts);
 
 // POST /api/workouts
-router.post("/", createWorkout);
+router.post("/", requireAuth, createWorkout);
 
 // GET /api/workouts/:workoutId
 router.get("/:workoutId", getWorkoutById);
 
 // PUT /api/workouts/:workoutId
-router.put("/:workoutId", updateWorkout);
+router.put("/:workoutId", requireAuth, updateWorkout);
 
 // DELETE /api/workouts/:workoutId
-router.delete("/:workoutId", deleteWorkout);
+router.delete("/:workoutId", requireAuth, deleteWorkout);
 
 module.exports = router;

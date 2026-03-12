@@ -1,8 +1,13 @@
 import { useState } from "react";
+import useLogin from "../hooks/useLogin";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const { login, isLoading, error } = useLogin();
+  const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,6 +17,12 @@ const LoginPage = () => {
     // - Display error from the hook if present
     // - Display a loading state on the button using isLoading from the hook
     // - Navigate to "/" on successful login
+
+  const result = await login(username, password);
+
+  if (result) {
+    navigate("/");
+  }
     console.log("Login submit:", { username, password });
   };
 
