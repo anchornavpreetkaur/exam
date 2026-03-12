@@ -4,15 +4,33 @@
 
 - You may use **any offline material** (your own code, notes, course material).
 - **No AI tools** (ChatGPT, Copilot, etc.) and **no internet search** (Google, Stack Overflow, etc.).
-- Work individually.
-- Read each question carefully before coding.
 - **Make a git commit after each question** with a meaningful commit message (e.g., `Q1: Implement getWorkoutById`).
+
+---
+
+**Format:** This exam consists of two parts and will be completed in pairs.
+*   **Part 1:** One student will be the **Driver** and the other will be the **Navigator**.
+*   **Part 2:** After a short break, you will **switch roles**. The previous Driver will become the Navigator, and the previous Navigator will become the Driver.
+
+**Grading Policy:**
+You are being graded on your performance **within your assigned role**, not on the final "outcome" (i.e., whether the code is 100% perfect or finished). 
+
+*   **The Driver** is graded on:
+    *   Writing clean code and following syntax rules.
+    *   "Thinking out loud" so the Navigator knows what they are doing.
+    *   Listening to the Navigator's directions.
+
+*   **The Navigator** is graded on:
+    *   **Providing "Tips" and Guidance:** Actively suggesting the next steps and logic.
+    *   **Reviewing:** Catching typos or logical errors as the Driver types.
+    *   **Strategic Thinking:** Keeping track of the "big picture" (e.g., "Don't forget we need to handle the empty list case next").
+
 
 ---
 
 ## Overview
 
-You are given a **starter code** for a Workout listing application. Some parts are already implemented and working:
+You are given a [*starter code** for a Workout listing application.](https://github.com/FullStack-DP/exam) Some parts are already implemented and working:
 
 **Already working:**
 - Backend: `getAllWorkouts` (GET /api/workouts) and `createWorkout` (POST /api/workouts)
