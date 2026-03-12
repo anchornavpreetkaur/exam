@@ -5,12 +5,15 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const user = JSON.parse(localStorage.getItem("user"));
-  const token = localStorage.getItem("token");
+  //const token = localStorage.getItem("token");
+  const token =user?.token;
 
   const handleLogout = () => {
     localStorage.removeItem("user");
     localStorage.removeItem("token");
-    navigate("/");
+    localStorage.clear();
+  navigate("/login");
+  window.location.reload();
   };
 
   return (

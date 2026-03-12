@@ -21,6 +21,7 @@ const signup = async (req, res) => {
 
 // POST /api/users/login — ALREADY IMPLEMENTED
 const login = async (req, res) => {
+  debugger;
   const { username, password } = req.body;
   const user = await User.findOne({ username });
   if (!user) {

@@ -9,7 +9,7 @@ const SignupPage = () => {
   const [phone_number, setPhoneNumber] = useState("");
   const [address, setAddress] = useState("");
 
-  const { signup, isLoading, error } = useSignup();
+  const { signup, isLoading, error } = useSignup("/api/users/signup");
   const navigate = useNavigate(); 
   
 

@@ -6,7 +6,7 @@ const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { login, isLoading, error } = useLogin();
+  const { login, isLoading, error } = useLogin("/api/users/login");
   const navigate = useNavigate(); 
 
   const handleSubmit = async (e) => {
@@ -18,7 +18,10 @@ const LoginPage = () => {
     // - Display a loading state on the button using isLoading from the hook
     // - Navigate to "/" on successful login
 
-  const result = await login(username, password);
+  const result = await login({
+    username,
+    password
+  });
 
   if (result) {
     navigate("/");
